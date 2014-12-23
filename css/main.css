@@ -6,8 +6,8 @@ body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    color: #dedede;
-    background-color: #0e0026;
+    color: #4f535f;
+    background-color: #0d001f;
     -webkit-overflow-scrolling:touch;
 }
 
@@ -29,11 +29,11 @@ h6 {
 }
 
 h2 {
-    color: #fff;
+    color: #d8d8d8;
 }
 
 a {
-    color: #e0e0e0;
+    color: #b5b5b5;
     font-weight: 700;
 }
 
@@ -42,7 +42,7 @@ h3 {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #fff;
+    color: #d8d8d8;
     letter-spacing: 1px;
 }
 
@@ -83,7 +83,7 @@ a:focus {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
-    background-color: rgba(23, 23, 23, 0.87) !important;
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 1000;
 }
 
@@ -92,7 +92,7 @@ a:focus {
 }
 
 .navbar .navbar-toggle {
-    color: #444;
+    color: #fff;
 }
 
 .navbar-brand {
@@ -100,7 +100,7 @@ a:focus {
     padding: 0;
 }
 .navbar-logo{
-    height: 25px;
+    height: 50px;
     width: 50px;
     display: inline-block;
 }
@@ -114,11 +114,34 @@ a:focus {
     background-color: none !important;
 }
 
+.navbar-custom a {
+    color: #fff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+    color: rgba(255, 255, 255, 0.65);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-custom .nav li a:hover{
+    outline: 0;
+    background: none;
+    color: #fff !important;
+}
 
 .top-nav-collapse .nav li a:hover{
     outline: 0;
     background: none;
     color: #7cbaff !important;
+}
+
+.navbar-custom .nav li.active a {
+    outline: 0;
+    background: none;
+    color: #b78aff !important;
 }
 
 .navbar-toggle {
@@ -130,25 +153,6 @@ a:focus {
 .navbar-toggle:focus,
 .navbar-toggle:active {
     outline: 0;
-}
-
-.dawn{
-    background:url('') no-repeat center center scroll;
-    background-color: #000;
-}
-
-.dawn-section{
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
-.eco-system{
-    background-color: #17004a;
-}
-
-.eco-system-section{
-    padding-top: 50px;
-    padding-bottom: 100px;
 }
 
 @media(max-width:767px) {
@@ -168,6 +172,13 @@ a:focus {
     .navbar-title{
         display: none;
     }
+    .navbar-custom .nav li a {
+        color: #333332 !important;
+        border-bottom: none !important;
+    }
+    .navbar-custom .nav li a:hover {
+        color: #ccc !important;
+    }
     .brand-heading {
         font-size: 36px !important;
         font-weight: 600;
@@ -180,7 +191,7 @@ a:focus {
         font-weight: 100;
         text-align: center;
     }
-    .dawn-page-scroll{
+    .work-page-scroll{
         display: none;
     }
     .profile {
@@ -189,7 +200,7 @@ a:focus {
 }
 
 @media(max-width:500px) {
-    .dawn-section {
+    .work-section {
         padding-top: 140px;
         margin-top: -150px;
         min-height: 780px !important;
@@ -198,16 +209,16 @@ a:focus {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 10px 0;
+        padding: 20px 0;
         border-bottom: 0;
-        
+        background: 0 0;
         -webkit-transition: background .3s ease-in-out,padding .3s ease-in-out;
         -moz-transition: background .3s ease-in-out,padding .3s ease-in-out;
         transition: background .3s ease-in-out,padding .3s ease-in-out;
     }
 
     .top-nav-collapse {
-        background-color: rgba(255, 255, 255, 0.97);
+        background-color: rgba(0, 0, 0, 0.93);
         margin-top: 0px;
         color: #333332;
     }
@@ -233,7 +244,7 @@ a:focus {
     text-align: center;
     color: rgba(255,255,255,0.7);
     background: url('../img/garan_sunrise.png') no-repeat center center scroll;
-    background-color: #3700cb;
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -377,9 +388,9 @@ footer {
     -moz-border-radius: 3px; 
     -webkit-border-radius: 3px; 
     border-radius: 3px;
-    color: #fff;
-    background-color: #5e04ed;
-    border: 2px solid #d3d3d3;
+    color: #b78aff;
+    background-color: #fff;
+    border: 2px solid #b78aff;
     font-family: 'Montserrat', sans-serif;
     display: block;
     position: relative;
@@ -394,6 +405,8 @@ footer {
 }
 
 .button:hover {
+    border-color: #fff;
+    background-color: #b78aff;
     color: #fff !important;
 }
 
@@ -406,13 +419,6 @@ footer {
 
     }
 
-}
-
-
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
 }
 
 ::selection{background:rgba(0,0,0,0.1);}
