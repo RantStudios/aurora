@@ -89,6 +89,7 @@ a:focus {
 
 .navbar a {
     border: none;
+    font-size: 12px;
 }
 
 .navbar .navbar-toggle {
@@ -161,7 +162,7 @@ a:focus {
 }
 
 .dawn{
-    padding-top:150px;
+    padding-top:200px;
     background: url('../img/bedroom.jpg') no-repeat center center scroll;
 }
 
